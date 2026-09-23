@@ -36,3 +36,14 @@ ggplot(plot_df, aes(x = x, y = y)) +
 ```
 
 ![](rmd_basic_plots_files/figure-gfm/yx_scatter-1.png)<!-- -->
+
+Lastly, we show a histogram of the `y` variable.
+
+``` r
+ggplot(plot_df, aes(x = y)) + 
+    geom_histogram()
+```
+
+    ## `stat_bin()` using `bins = 30`. Pick better value `binwidth`.
+
+![](rmd_basic_plots_files/figure-gfm/y_hist-1.png)<!-- -->
